@@ -538,10 +538,16 @@
   }
 
   .local-paypal-mark {
-    color: #1772b8;
-    font-weight: 800;
-    font-size: 17px;
-    font-style: italic;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .local-klarna-logo {
+    display: block;
+    width: auto;
+    height: 22px;
+    max-width: 86px;
+    object-fit: contain;
   }
 
   .el-18273.container > .container-box,
@@ -711,50 +717,28 @@
     box-sizing: border-box;
   }
 
-  .local-paypal-note__icon {
+  .local-paypal-note__logo {
     display: block;
-    width: 52px;
-    height: 38px;
+    width: auto;
+    height: 34px;
+    max-width: 110px;
     margin: 0 auto 12px;
-    border: 2px solid #bfc5ce;
-    border-radius: 2px;
-    position: relative;
+    object-fit: contain;
   }
 
-  .local-paypal-note__icon::before {
-    content: "";
-    position: absolute;
-    left: -2px;
-    right: -2px;
-    top: 8px;
-    border-top: 2px solid #bfc5ce;
-  }
-
-  .local-paypal-note__icon::after {
-    content: "";
-    position: absolute;
-    right: -11px;
-    top: 16px;
-    width: 18px;
-    height: 10px;
-    border-top: 2px solid #bfc5ce;
-    border-right: 2px solid #bfc5ce;
-    transform: skewX(20deg);
-  }
-
-  .local-payment-panel[data-method="paypal"] .local-card-fields {
+  .local-payment-panel[data-method="klarna"] .local-card-fields {
     display: none;
   }
 
-  .local-payment-panel[data-method="paypal"] .local-paypal-note {
+  .local-payment-panel[data-method="klarna"] .local-paypal-note {
     display: block;
   }
 
-  .local-payment-panel[data-method="paypal"] [data-pay-method="card"] .local-radio::after {
+  .local-payment-panel[data-method="klarna"] [data-pay-method="card"] .local-radio::after {
     opacity: 0;
   }
 
-  .local-payment-panel[data-method="paypal"] [data-pay-method="paypal"] .local-radio::after {
+  .local-payment-panel[data-method="klarna"] [data-pay-method="klarna"] .local-radio::after {
     content: "";
     position: absolute;
     inset: 3px;
@@ -763,11 +747,11 @@
     opacity: 1;
   }
 
-  .local-payment-panel[data-method="paypal"] [data-pay-method="paypal"] .local-radio {
+  .local-payment-panel[data-method="klarna"] [data-pay-method="klarna"] .local-radio {
     border-color: #111;
   }
 
-  .local-payment-panel[data-method="paypal"] [data-pay-method="paypal"] {
+  .local-payment-panel[data-method="klarna"] [data-pay-method="klarna"] {
     background: #fbfcfd;
   }
 
@@ -1641,23 +1625,23 @@ countdown();
     }    }</style><div class="container el-349155"><div class="container-box cbox-349155-0"><div class=element-wrapper data-eid=561438><div class="el-561438 img" is-popup=false><style>.el-349155 .el-561438  { display:inherit;margin:0px 0px 0px 0px; }.el-349155 .el-561438 { align-items:flex-start; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-349155 .el-561438  { display:inherit; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-349155 .el-561438  { display:inherit; } } .el-349155 .el-561438 img { box-shadow:none;object-fit:scale-down; } .el-349155 .el-561438 img { width:75px;height:63px; }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-349155 .el-561438 img { width:51px;height:41px; } }</style><picture><source srcset=//img.funnelish.com/89488/0/1772646883-1742187058-1737140272-1708122922-credit-card-payment%20%281%29.webp media="(width > 1024px)"><img alt data-src=//img.funnelish.com/89488/0/1772646883-1742187058-1737140272-1708122922-credit-card-payment%20%281%29.webp data-srcset="//img.funnelish.com/89488/0/1772646883-1742187058-1737140272-1708122922-credit-card-payment%20%281%29.webp 1x" height=63px src=//img.funnelish.com/89488/0/1772646883-1742187058-1737140272-1708122922-credit-card-payment%20%281%29.webp width=75px crossorigin=anonymous fetchpriority=high loading=lazy data-sizes=auto></picture></div></div></div><div class="container-box cbox-349155-1"><div class=element-wrapper data-eid=749845><div class=el-749845 is-popup=false><div class=headline><style>.el-349155 .el-749845  { width:100%;display:flex; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-349155 .el-749845  { width:100%;display:flex; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-349155 .el-749845  { width:100%;display:flex; } } .el-349155 .el-749845 .headline  { display:inherit;font-family:Outfit;font-size:18px;text-align:left;font-weight:400;font-style:normal;line-height:1;margin:5px 0px 5px 0px;padding:5px 7px 5px 7px;box-shadow:none;text-shadow:transparent 0px 0px 0px ; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-349155 .el-749845 .headline  { display:inherit; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-349155 .el-749845 .headline  { display:inherit;font-size:20px; } }</style><div class=headline-inner><h2><strong>Stap 3: Betaalmethode:</strong></h2></div></div></div></div></div></div></div></div><div class="local-payment-panel" data-method="card" aria-label="Payment method">
   <button type="button" class="local-pay-row local-pay-header is-active" data-pay-method="card">
     <span class="local-radio is-selected"></span>
-    <span class="local-pay-title">Credit/Debit Card</span>
+    <span class="local-pay-title">Kredit-/Debetkort</span>
     <span class="local-card-brands"><span>VISA</span><span>MC</span><span>AMEX</span></span>
   </button>
   <div class="local-card-fields">
-    <input aria-label="Card Number" placeholder="Card Number">
+    <input aria-label="Kortnummer" placeholder="Kortnummer">
     <div class="local-card-grid">
       <input aria-label="Expiration Date" placeholder="MM/YY">
       <input aria-label="CVV" placeholder="CVV">
     </div>
   </div>
-  <button type="button" class="local-pay-row local-pay-paypal" data-pay-method="paypal">
+  <button type="button" class="local-pay-row local-pay-paypal" data-pay-method="klarna">
     <span class="local-radio"></span>
-    <span class="local-paypal-mark">PayPal</span>
+    <span class="local-paypal-mark"><img class="local-klarna-logo" src="./klarna.svg" alt="Klarna"></span>
   </button>
   <div class="local-paypal-note">
-    <span class="local-paypal-note__icon" aria-hidden="true"></span>
-    Nadat u op <strong>"VOLLEDIGE BESTELLING"</strong> hebt geklikt, wordt u doorgestuurd naar PayPal om uw aankoop veilig af te ronden.
+    <img class="local-paypal-note__logo" src="./klarna.svg" alt="Klarna">
+    Nadat u op <strong>"VOLLEDIGE BESTELLING"</strong> hebt geklikt, wordt u doorgestuurd naar Klarna om uw aankoop veilig af te ronden.
   </div>
 </div><div class=element-wrapper data-eid=56358><div class="payment-form loading el-56358" is-popup=false><style>.el-876509 .el-56358  { display:inherit;margin:10px 10px 0px 10px;box-shadow:none; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-876509 .el-56358  { display:inherit; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-876509 .el-56358  { display:inherit; } }</style><div class=spinner><svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="50" cy="50" fill="none" stroke="currentColor" stroke-width="4" r="34" stroke-dasharray="70 25" transform="rotate(73.7169 50 50)"><animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.6134969325153374s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform></circle></svg></div></div></div><div class="local-static-cta"><button type="button">VOLLEDIGE BESTELLING -&gt;</button></div><div class=element-wrapper data-eid=54760><div class="btn-container el-54760" is-popup=false><style>.el-876509 .el-54760 .btn { display:inherit;color:#F6F9FE;font-size:14px;text-align:center;font-weight:400;font-style:normal;border-top:0px dashed #804219FF;border-left:0px dashed #804219FF;border-right:0px dashed #804219FF;border-bottom:0px dashed #804219FF;border-radius:40px 40px 40px 40px;margin:25px 0px 0px 0px;padding:15px 15px 15px 15px;background-color:#000000;box-shadow:none; }.el-876509 .el-54760 { align-items:center; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-876509 .el-54760 .btn { display:inherit; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-876509 .el-54760 .btn { display:inherit; } } .el-876509 .el-54760 .btn-sub-headline { color:#F6F9FE;font-size:14px;text-align:center;font-weight:400;font-style:normal;margin-top:10px; } .el-876509 .el-54760 .btn-headline { font-family:Outfit;font-size:24px;text-align:center;font-weight:bold;font-style:normal; }</style><a class="btn pointer" target=_self href=#submit-step x-on:click=$store.interactions.submitStep($event) x-data><span class=btn-headline>VOLLEDIGE BESTELLING -&gt;</span></a></div></div><div class=element-wrapper data-eid=196966><div class="el-196966 img" is-popup=false><style>.el-876509 .el-196966  { display:inherit;margin:5px 0px 5px 0px; }.el-876509 .el-196966 { align-items:center; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-876509 .el-196966  { display:inherit; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-876509 .el-196966  { display:inherit; } } .el-876509 .el-196966 img { box-shadow:none;object-fit:scale-down; } .el-876509 .el-196966 img { width:100%;height:auto; }</style><picture><source srcset=./end.png media="(width > 1024px)"><img alt data-src=./end.png data-srcset="./end.png 1x" height=auto src=./end.png width=100% crossorigin=anonymous fetchpriority=high loading=lazy data-sizes=auto></picture></div></div><div class=element-wrapper data-eid=397551><div class=el-397551 is-popup=false><div class=paragraph><style>.el-876509 .el-397551  { justify-content:center;width:100%;display:flex; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-876509 .el-397551  { width:100%;display:flex; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-876509 .el-397551  { width:100%;display:flex; } } .el-876509 .el-397551 .paragraph { display:none;font-size:18px;text-align:center;font-weight:400;font-style:normal;line-height:1.5;margin:0px 0px 0px 0px;padding:0px 10px 0px 10px;text-shadow:transparent 0px 0px 0px ; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-876509 .el-397551 .paragraph { display:inherit; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-876509 .el-397551 .paragraph { display:inherit;color:#3068B1FF;font-size:10px; } }</style><div class=paragraph-inner><p><a target=_blank rel="noopener noreferrer nofollow" class=internal href=https://nativa-glow.com/policies/terms-of-service><strong>Algemene Voorwaarden | </strong></a><a target=_blank rel="noopener noreferrer nofollow" class=internal href=https://nativa-glow.com/policies/shipping-policy><strong>Verzending & Retouren | </strong></a><a target=_blank rel="noopener noreferrer nofollow" class=internal href=https://nativa-glow.com/policies/privacy-policy><strong>Privacybeleid</strong></a><strong> | </strong><a target=_blank rel="noopener noreferrer nofollow" class=internal href=https://nativa-glow.com/policies/contact-information><strong>Contact</strong></a></div></div></div></div></div><div class=row-column style="width: 35%;"><div class=element-wrapper data-eid=803993><div class="el-803993 img" is-popup=false><style>.el-876509 .el-803993  { display:inherit;margin:10px 0px 0px 0px; }.el-876509 .el-803993 { align-items:center; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-876509 .el-803993  { display:inherit; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-876509 .el-803993  { display:none; } } .el-876509 .el-803993 img { box-shadow:none; } .el-876509 .el-803993 img { width:406px;height:60px; }</style><picture><source srcset=./logo.png media="(width > 1024px)"><img alt data-src=./logo.png data-srcset="./logo.png 1x" height=auto src=./logo.png width=432px crossorigin=anonymous fetchpriority=high loading=lazy data-sizes=auto></picture></div></div><div class=element-wrapper data-eid=918094><div class="container-wrapper container_918094"><style>.el-876509 .container_918094  { display:inherit; }@media only screen and (min-width: 600px) and (max-width: 1024px) { .el-876509 .container_918094  { display:none; } }@media only screen and (min-width: 0px) and (max-width: 600px) { .el-876509 .container_918094  { display:none; } } .el-876509 .el-918094.container  { font-size:18px;text-align:center;font-weight:400;font-style:normal;border-radius:20px 20px 20px 20px;margin:10px 20px 0px 20px;padding:0px 0px 0px 0px;background-repeat:no-repeat;background-position:center top;background-size:100% auto;box-shadow:#C0C0C0 0px 0px 5px 5px ;gap:0px; }.el-876509 .el-918094.container { align-items:flex-start; }.el-876509 .el-918094.container  { flex-direction: column; }  .el-876509 .el-918094.container  > .container-box:nth-child(1) {
       width: 100%;
