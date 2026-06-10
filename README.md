@@ -1,1 +1,1 @@
-# silk-and-jade-checkout
+# PeptiGlow-Checkout
